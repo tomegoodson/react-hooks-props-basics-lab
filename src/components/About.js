@@ -1,14 +1,15 @@
-import React from "react";
+// Example usage of the About component
+import React from 'react';
+import About from './About'; // Assuming this is the correct path to your About component
 
-function About() {
+function App() {
+  const bioContent = "This is my bio.";
+
   return (
-    <div id="about">
-      <h2>About Me</h2>
-      <p>Put the bio in here</p>
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      {/* add your <Links /> component here */}
+    <div className="App">
+      <About bio={bioContent} />
     </div>
   );
 }
 
-export default About;
+export default App;
